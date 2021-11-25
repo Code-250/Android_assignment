@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/logo"
+        android:title="app_logo"
+        android:icon="@drawable/ic_baseline_filter_alt_24"/>
+    <item
+        android:id="@+id/company_name"
+        android:title="@string/fryo"
+        />
+    <item
+        android:id="@+id/search_button"
+        android:title="search"
+        android:icon="@drawable/ic_baseline_search_24"/>
+    <item
+        android:id="@+id/notification"
+        android:title="notification"
+        android:icon="@drawable/ic_baseline_notifications_24"/>
+</menu>
