@@ -6,24 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".My_cart">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Cart!"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/top_navigation"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:padding="1dp"
-        app:itemBackground="@color/white"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
-        app:menu="@menu/menu_top" />
+        android:id="@+id/top_navigation"
+        android:layout_height="45dp"
+        android:background="#359E39">
+
+        <TextView
+            android:id="@+id/text_toolbar"
+            android:layout_width="230dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:drawableLeft="@drawable/ic_baseline_filter_alt_24"
+            android:drawableTint="#ffffff"
+            android:gravity="end|center"
+            android:text="Fryo"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/text_toolbar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawableTint="#ffffff"
+                android:gravity="center"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_notifications_24"
+                android:drawableTint="#ffffff"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_navigation"
+        android:layout_above="@id/bottom_navigation"
+        />
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
