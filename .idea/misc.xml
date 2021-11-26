@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/drawable/selector.xml" value="0.13425925925925927" />
         <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/layout/activity_my_cart.xml" value="0.20885416666666667" />
+        <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/layout/activity_my_cart.xml" value="0.33" />
+        <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/layout/single_list_item.xml" value="0.33" />
         <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/layout/toolbar.xml" value="0.19907407407407407" />
         <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/menu/card_icon.xml" value="0.20885416666666667" />
         <entry key="..\:/Users/richm/AndroidStudioProjects/Android_assignment/app/src/main/res/menu/menu_navigation.xml" value="0.20885416666666667" />

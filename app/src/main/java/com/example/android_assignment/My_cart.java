@@ -9,12 +9,28 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
+
 public class My_cart extends AppCompatActivity {
+
+    int[] image;
+    String[] titleName = {"Hamburger","Pasta", "Coca Cola","Juice","Burger","Soda"};
+    String[] priceName = {"$ 23.00","$ 12.00","$ 45.00","$35.00","$ 40.45","$ 70.50"};
+    String[] itemNumber = {"4","2","5","4","8","12"};
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
+
+        ArrayList<CartItems> CartArrayList = new ArrayList<>();
+
+        for(int i = 0; i < titleName.length; i++){
+            CartItems cart = new CartItems(titleName[i], priceName[i],itemNumber[i]);
+            CartArrayList.add(cart);
+        }
 
         //        initialize and assign variables
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
